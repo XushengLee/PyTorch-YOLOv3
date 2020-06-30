@@ -75,21 +75,3 @@ utils/  # 辅助函数等
 video_detect.py  # 不带track的inference
 webcam_detect.py # 摄像头inference
 ```
-
-## Storage
-
-[红外数据](https://motionhoidata.blob.core.windows.net/infrareddata-yyw/%E5%BD%95%E5%88%B6%E7%B4%A0%E6%9D%90/)
-
-## 相关文档
-
-[周报2020/6/28](https://microsoftapc.sharepoint.com/:p:/t/ElderlyGadiansInternalcopy/ERDaSXVM2lJCrWTPKGFdM88BaVoXBJr_mP2tFBI5oKxMJQ?e=kMmAon)
-
-[周报2020/6/21](https://microsoftapc.sharepoint.com/:p:/t/ElderlyGadiansInternalcopy/EcHV2w-TBD9PvDdNd0jPzd8BSKKSnTG6KgTnObSmW6brfg?e=sDmCuc)
-
-## 视频结果展示
-
-[OneDrive](https://microsoftapc.sharepoint.com/:f:/t/ElderlyGadiansInternalcopy/Eg5isOLWmBtOigGG18G4MoQBGXe5OoB28rMok98prFJ0mA?e=U3TOei)
-
-
-
-## 
