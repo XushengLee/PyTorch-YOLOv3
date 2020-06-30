@@ -50,7 +50,7 @@ if __name__ == "__main__":
     parser.add_argument("--n_cpu", type=int, default=0, help="number of cpu threads to use during batch generation")
     parser.add_argument("--img_size", type=int, default=416, help="size of each image dimension")
     parser.add_argument("--checkpoint_model", type=str, help="path to checkpoint model")
-    parser.add_argument("--video_path", type=str, default="examples/PETS09-S2L2.mp4")
+    parser.add_argument("--webcam", type=int, default=0)
     parser.add_argument("--save_path", type=str, default="examples/res/")
     opt = parser.parse_args()
     print(opt)
@@ -74,7 +74,7 @@ if __name__ == "__main__":
     classes = load_classes(opt.class_path)  # Extracts class labels from file
 
 
-    cap = cv2.VideoCapture(opt.video_path)
+    cap = cv2.VideoCapture(opt.webcam)
     stream = cv2.VideoWriter(os.path.join(opt.save_path, 'out.mp4'), cv2.VideoWriter_fourcc(*'MJPG'),
                              20.0, (int(cap.get(3)), int(cap.get(4))) )
     
@@ -156,6 +156,7 @@ if __name__ == "__main__":
 #                im = cv2.cvtColor(np.array(im), cv2.COLOR_RGB2BGR)
                 im = cv2.resize(im, (int(cap.get(3)), int(cap.get(4))), interpolation=cv2.INTER_LINEAR)
                 print(im.shape)
+                cv2.imshow('frame', im)
                 stream.write(im)
                 plt.close(fig)           
         else:
