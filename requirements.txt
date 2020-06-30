@@ -7,7 +7,7 @@ tensorboard
 terminaltables
 pillow
 tqdm
-filterpy==1.4.5
+filterpy>=1.4.5
 numba==0.49.0
 scikit-image
 lap==0.4.0
